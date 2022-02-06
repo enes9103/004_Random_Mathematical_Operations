@@ -6,10 +6,7 @@ let button = document.querySelector(".button");
 let true1 = document.querySelector(".true1");
 let false1 = document.querySelector(".false1");
 
-
-
 button.addEventListener("click", hesaplama)
-
 function hesaplama() {
    if (operation.value == "+" ) {
         if (Number(number1.value) + Number(number2.value) == Number(result.value)) {
@@ -46,12 +43,10 @@ function hesaplama() {
     result.value = ""
     
     
-    
     let mylist = ["-", "*", "/", "+"]
     let choice = Math.floor(Math.random()*4)
     operation.value = mylist[choice]
     
-
     number1.value = Math.floor(Math.random()*100)
     number2.value = Math.floor(Math.random()*100)
 }
